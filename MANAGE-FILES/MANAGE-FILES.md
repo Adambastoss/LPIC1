@@ -199,4 +199,33 @@ Serve para identificar o tipo do arquivo
 ``file frutas.txt
 	Saída: **frutas.txt: ASCII text**
 
+---------------------------------------------------------------------------
+### **GLOBBING DE ARQUIVOS**
+
+##### O asterisco
+Um asterisco (*) corresponde a zero, uma ou mais ocorrências de qualquer caractere.
+``$ find /home -name *.png
+Esse comando localizaria todos os arquivos que terminam com .png, como photo.png, cat.png, frank.png.
+
+##### O ponto de interrogação
+O ponto de interrogação (?) corresponde a uma única ocorrência de um caractere.
+``$ ls 
+	last.txt lest.txt list.txt third.txt past.txt
+
+Para retornar apenas os arquivos que **começam** com **l** seguido por qualquer caractere único e os caracteres st.txt, usamos o caractere curinga ponto de interrogação (?):
+``$ ls l?st.txt
+
+##### Caracteres entre chaves
+Os curingas entre colchetes correspondem a qualquer ocorrência do(s) caractere(s) entre colchetes:
+``$ ls l[aef]st.txt 
+	last.txt lest.txt
+Este comando listaria todos os arquivos começando com l seguido por qualquer um dos caracteres do conjunto aef e terminando com st.txt.
+
+``$ ls 
+	student-1A.txt student-2A.txt student-3.txt 
+
+``$ ls student-[0-9][A-Z].txt 
+	student-1A.text student-2A.txt
+
+--------------------------------------------------------------------------
 
