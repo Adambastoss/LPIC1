@@ -228,4 +228,3 @@ Este comando listaria todos os arquivos começando com l seguido por qualquer um
 	student-1A.text student-2A.txt
 
 --------------------------------------------------------------------------
-
