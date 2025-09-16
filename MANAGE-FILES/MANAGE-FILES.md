@@ -228,13 +228,5 @@ Este comando listaria todos os arquivos começando com l seguido por qualquer um
 	student-1A.text student-2A.txt
 
 --------------------------------------------------------------------------
-### **TEE**
 
-Serve como um **T de tomada**. Lê a entrada padrão e grava simultaneamente em um ou mais arquivos.
-
-##### EXIBIR "**Olá mundo!**" NA TELA E GRAVAR A SAÍDA NO ARQUIVO **saudacao.txt** 
-``echo "Olá, mundo! | tee saudacao.txt"
-
-##### ADICIONAR "**Nova linha**" AO FINAL DO ARQUIVO **saudacao** SEM APAGAR O CONTEÚDO ANTE...
-``echo "Nova linha" | tee -a saudacao.txt
 
